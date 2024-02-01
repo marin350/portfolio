@@ -1,0 +1,72 @@
+body{
+    background-color: whitesmoke;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: black;
+    font-family: "Noto Sans Mono";
+    font-size: 150%;
+    margin-right: 1%;
+    border-radius: 5%;
+}
+a:hover{
+    color: black;
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+.text{
+    font-size: 300%;
+    font-family: "Noto Sans Mono";
+    font-weight: 400;
+    position: absolute;
+    left: 80%;
+    top: -2%;
+}
+.ctext{
+    font-size: 200%;
+    font-family: "Noto Sans Mono";
+}
+#school{
+    position: absolute;
+    top: 500%;
+    left: 30%;
+}
+#place{
+    position: absolute;
+    top: 600%;
+    left: 30%;
+}
+#gmail{
+    position: absolute;
+    top: 800%;
+    left: 30%;
+}
+#insta{
+    position: absolute;
+    top: 900%;
+    left: 30%;
+}
+#linkedin{
+    position: absolute;
+    top: 1000%;
+    left: 30%;
+}
+#btext{
+    font-size: 100%;
+    font-family: "Noto Sans Mono";
+    color: black;
+    position: absolute;
+    margin-left: -3%;
+    top: 700px;
+    left: 70%;
+    margin-right: 0;
+    width: 40%;
+    padding: 20px;
+    animation: btext 4s infinite;
+}
+@keyframes btext {
+    from {left: 85%;}
+    to {left: -35%;}
+}
