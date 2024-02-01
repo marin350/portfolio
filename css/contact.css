@@ -17,7 +17,7 @@ a:hover{
     border: 1px solid black;
 }
 .text{
-    font-size: 300%;
+    font-size: 150%;
     font-family: "Noto Sans Mono";
     font-weight: 400;
     position: absolute;
@@ -25,33 +25,33 @@ a:hover{
     top: -2%;
 }
 .ctext{
-    font-size: 200%;
+    font-size: 150%;
     font-family: "Noto Sans Mono";
 }
 #school{
     position: absolute;
     top: 500%;
-    left: 30%;
+    left: 35%;
 }
 #place{
     position: absolute;
     top: 600%;
-    left: 30%;
+    left: 35%;
 }
 #gmail{
     position: absolute;
     top: 800%;
-    left: 30%;
+    left: 35%;
 }
 #insta{
     position: absolute;
     top: 900%;
-    left: 30%;
+    left: 35%;
 }
 #linkedin{
     position: absolute;
     top: 1000%;
-    left: 30%;
+    left: 35%;
 }
 #btext{
     font-size: 100%;
