@@ -229,6 +229,7 @@ footer{
     #fade{
         position: relative;
         left: -1%;
+
     }
     .grid-item4{
         display: none;
@@ -242,5 +243,81 @@ footer{
     #img-5{
         max-width: 43%;
         height: auto;
+    }
+}
+
+
+
+@media screen and (max-width: 400px) {
+    body{
+        overflow-x: hidden;
+    }
+    .p-title{
+        font-size: 1rem;
+    }
+    #fade{
+        background-size: 150%;
+    }
+    .container{
+        margin-top: 0;
+    }
+    .work-title{
+       position: relative;
+       top: -5%;
+    }
+    nav{
+        overflow: hidden;
+    }
+    .grid-item1{
+        margin-left: 1%;
+    }
+    .grid-item2,  .grid-item3{
+        position: relative;
+        left: 8%;
+    }
+    .grid-item7{
+        position: relative;
+        left: -8%;
+    }
+    .item7{
+        position: relative;
+        font-size: 2rem;
+    }
+    .grid-item8{
+        position: relative;
+        left: -28%;
+    }
+    #fade{
+        margin-bottom: 0;
+        position: relative;
+        top: -15%;
+        left: -1%;
+        height: 30%;
+    }
+    .grid-item4{
+        display: none;
+    }
+    .grid-item5{
+        display: none;
+    }
+    .grid-item6{
+        display: none;
+    }
+    #img-5{
+        width: 30%;
+        height: auto;
+    }
+    .portfolio-img{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .arrow::before{ 
+        content: "⤹";
+        color: orangered;
+        font-size: 3rem;
+        position: relative;
+        top: 80%;
+        left: 45%;
     }
 }
