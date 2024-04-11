@@ -197,6 +197,9 @@ footer{
     body{
         overflow-x: hidden;
     }
+    .p-title{
+        font-size: 1rem;
+    }
     #fade{
         background-size: 150%;
     }
@@ -235,5 +238,9 @@ footer{
     }
     .grid-item6{
         display: none;
+    }
+    #img-5{
+        max-width: 43%;
+        height: auto;
     }
 }
