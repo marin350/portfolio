@@ -1,0 +1,47 @@
+.birds{
+    width: 100%;
+    
+}
+img{
+    width: 150px;
+}
+.bird1{
+    overflow: hidden;
+    position: relative;
+    top: -170px;
+    left: 0;
+    animation: bird1 7s infinite forwards;
+}
+
+.bird2{
+    position: relative;
+    top: -95px;
+    left: -10%;
+    animation: bird2 7s infinite forwards;
+}
+@keyframes bird2{ 
+    0% {opacity: 100%; left: -10%;}
+    10% {opacity: 0%; left: 0%;}
+    20% {opacity: 100%; left: 10%;}
+    30% {opacity: 0%; left: 20%;}
+    40% {opacity: 100%; left: 30%;}
+    50% {opacity: 0%; left: 40%;}
+    60% {opacity: 100%; left: 50%;}
+    70% {opacity: 0%; left: 60%;}
+    80% {opacity: 100%; left: 70%;}
+    90% {opacity: 0%; left: 80%;}
+    100%{opacity: 100%; left: 90%;}
+}
+@keyframes bird1{ 
+    0% {opacity: 0%; left: 0%;}
+    10% {opacity: 100%; left: 10%;}
+    20% {opacity: 0%; left: 20%;}
+    30% {opacity: 100%; left: 30%;}
+    40% {opacity: 0%; left: 40%;}
+    50% {opacity: 100%; left: 50%;}
+    60% {opacity: 0%; left: 60%;}
+    70% {opacity: 100%; left: 70%;}
+    80% {opacity: 0%; left: 80%;}
+    90% {opacity: 100%; left: 90%;}
+    100% {opacity: 0%; left: 100%;}
+}
