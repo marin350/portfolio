@@ -1,6 +1,5 @@
 .birds{
-    width: 100%;
-    
+    width: 100%;  
 }
 img{
     width: 150px;
@@ -44,4 +43,25 @@ img{
     80% {opacity: 0%; left: 80%;}
     90% {opacity: 100%; left: 90%;}
     100% {opacity: 0%; left: 100%;}
+}
+
+@media screen and (max-width: 400px) {
+    body{
+        overflow-x: hidden;
+    }
+    .contact{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -2%;
+    }
+    .bird1{
+        position: relative;
+        top: -140px;
+    }
+    
+    .bird2{
+        position: relative;
+        top: -80px;
+    }
 }

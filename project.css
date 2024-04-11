@@ -72,3 +72,18 @@ embed{
         width: 95%;
     }
   }
+
+  @media screen and (max-width: 400px) {
+    body {
+      overflow-x: hidden;
+    }
+    .description{
+        word-wrap: break-word;
+        font-size: 0.9rem ;
+        width: 90%;
+    }
+    .image-div{
+        max-width: 65%;
+        margin-bottom: 5%;
+    }
+  }
