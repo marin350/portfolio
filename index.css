@@ -15,7 +15,7 @@ body{
 nav{
    display: grid;
    font-size: var(--fontlg);
-   grid-template-columns: 13.125rem 50.625rem 25rem 5rem;
+   grid-template-columns: 13.125rem 50.625rem 25rem 25rem;
    grid-template-rows: 1.563rem 1.563rem 34rem;
 }
 nav a{
@@ -49,7 +49,7 @@ nav a{
 .grid-item6{
     grid-column: 4;
     grid-row: span 2;
-    max-width: 60%;
+    max-width: 12%;
     overflow-x: hidden;
 }
 .grid-item7{
