@@ -52,3 +52,23 @@ embed{
 #ctitle:hover{
     font-style: italic;
 }
+
+
+
+
+@media screen and (max-width: 700px) {
+    body {
+      overflow-x: hidden;
+    }
+    .description{
+        word-wrap: break-word;
+        width: 90%;
+    }
+    .image-div{
+        max-width: 55%;
+        margin-bottom: 5%;
+    }
+    embed{
+        width: 95%;
+    }
+  }
