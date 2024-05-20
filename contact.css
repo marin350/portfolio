@@ -1,67 +1,65 @@
-.birds{
-    width: 100%;  
+:root{
+    --blue : #2e15a4;
+    --lightblue : #c5bbf6;
+    --ivory : #fafaf2;
 }
-img{
-    width: 150px;
+body{
+    height: 100vh;
+    background-color: var(--ivory);
 }
-.bird1{
+/* contact */
+.contact-info{
+    font-size: 55px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    color: black;
+}
+.slash{
+    color: var(--blue);
+}
+.cpi{
+    max-width: 30%;
+    position: relative;
+    left: 35%;
+    top: 150px;
+}
+a{
+    color: black;
+}
+.image-container {
+    width: 100%;
+    height: 400px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.container{
+    background-color: var(--ivory);
+    color: black;
+    z-index: 20000;
+}
+.image-container img {
+    max-width: 100%;
+    object-fit: cover;
+}
+.contact-footer{
+    position: relative;
+    top: 200px;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    color: black;
+}
+marquee{
+    width: 43%;
     overflow: hidden;
+    display: block;
     position: relative;
-    top: -170px;
-    left: 0;
-    animation: bird1 7s infinite forwards;
-}
-
-.bird2{
-    position: relative;
-    top: -95px;
-    left: -10%;
-    animation: bird2 7s infinite forwards;
-}
-@keyframes bird2{ 
-    0% {opacity: 100%; left: -10%;}
-    10% {opacity: 0%; left: 0%;}
-    20% {opacity: 100%; left: 10%;}
-    30% {opacity: 0%; left: 20%;}
-    40% {opacity: 100%; left: 30%;}
-    50% {opacity: 0%; left: 40%;}
-    60% {opacity: 100%; left: 50%;}
-    70% {opacity: 0%; left: 60%;}
-    80% {opacity: 100%; left: 70%;}
-    90% {opacity: 0%; left: 80%;}
-    100%{opacity: 100%; left: 90%;}
-}
-@keyframes bird1{ 
-    0% {opacity: 0%; left: 0%;}
-    10% {opacity: 100%; left: 10%;}
-    20% {opacity: 0%; left: 20%;}
-    30% {opacity: 100%; left: 30%;}
-    40% {opacity: 0%; left: 40%;}
-    50% {opacity: 100%; left: 50%;}
-    60% {opacity: 0%; left: 60%;}
-    70% {opacity: 100%; left: 70%;}
-    80% {opacity: 0%; left: 80%;}
-    90% {opacity: 100%; left: 90%;}
-    100% {opacity: 0%; left: 100%;}
-}
-
-@media screen and (max-width: 400px) {
-    body{
-        overflow-x: hidden;
-    }
-    .contact{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin-top: -2%;
-    }
-    .bird1{
-        position: relative;
-        top: -140px;
-    }
-    
-    .bird2{
-        position: relative;
-        top: -80px;
-    }
+    left: 28.5%;
+    font-size: 22px;
+    font-weight: 900;
+    margin-top: 1%;
+    color: black;
+    border-bottom: 4px solid var(--blue);
 }

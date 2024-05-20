@@ -1,89 +1,73 @@
-nav{
-    display: grid;
-    font-size: var(--fontlg);
-    grid-template-columns: 13.125rem 50.625rem 25rem 5rem;
-    grid-template-rows: 1.563rem;
+:root{
+    --blue : #2e15a4;
+    --lightblue : #c5bbf6;
+    --ivory : #fafaf2;
 }
-.project-div{
+
+
+body{
+    background-color: var(--ivory);
+    height: 100vh;
+}
+.container{
+    background-color: var(--ivory);
+    color: black;
+    z-index: 20000;
+}
+a{
+    color: black;
+}
+.project-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 1%;
+}
+.project-title{
+    width: 30%;
+}
+h4{
+    margin-top: -3%;
+}
+.project-description{
+    width: 40%;
+    position: relative;
+    left: -10%;
+}
+.p-images{
+    text-align: center;
+}
+.project1 img{
+    width: 40%;
+    margin: 1%;
+}
+.project2 img{
+    width: 35%;
+    border: 0.5px solid var(--lightblue);
+}
+video{
+    width: 60%;
+    margin: 1%;
+    border: 0.5px solid var(--lightblue);
+    margin: 1%;
+    border-radius: 10px;
+}
+.project4 img{
+    width: 40%;
+    margin: 1%;
+}
+.project5 img, .project7 img{
+    width: 35%;
+}
+.project7 img{
+    border: 0.5px solid var(--lightblue);
+}
+.project8 img{
+    width: 35%;
+    margin: 1%;
+    border: 0.5px solid var(--lightblue);
+}
+
+.project-footer{
+    padding-bottom: 20px;
     margin-top: 5%;
-    overflow-x: hidden;
-    margin-left: 3%;
 }
-.number{
-    margin-bottom: 2%;
-}
-.title-div{
-    font-size: var(--fontlg);
-    font-style: italic;
-}
-.description{
-    word-wrap: break-word;
-    width: 70%;
-}
-.image-grid{
-    margin-top: 5%;
-    width: 90%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px; 
-    align-items: center;
-}
-.image-s img {
-    width: 100%; 
-    height: auto; 
-}
-img{
-    max-width: 100%;
-}
-.image-div{
-    margin-top: 5%;
-    max-width: 40%;
-}
-embed{
-    width: 240%;
-    height: 700px;
-    border: 0.75px solid rgba(0, 0, 0, 0.444);
-}
-#ctitle{
-    color: orangered;
-    text-decoration: none;
-    font-style: normal;
-}
-#ctitle:hover{
-    font-style: italic;
-}
-
-
-
-
-@media screen and (max-width: 700px) {
-    body {
-      overflow-x: hidden;
-    }
-    .description{
-        word-wrap: break-word;
-        width: 90%;
-    }
-    .image-div{
-        max-width: 55%;
-        margin-bottom: 5%;
-    }
-    embed{
-        width: 95%;
-    }
-  }
-
-  @media screen and (max-width: 400px) {
-    body {
-      overflow-x: hidden;
-    }
-    .description{
-        word-wrap: break-word;
-        font-size: 0.9rem ;
-        width: 90%;
-    }
-    .image-div{
-        max-width: 65%;
-        margin-bottom: 5%;
-    }
-  }
