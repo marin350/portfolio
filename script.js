@@ -14,6 +14,7 @@ var p5 = document.querySelector(".p5")
 var p6 = document.querySelector(".p6")
 var p7 = document.querySelector(".p7")
 var p8 = document.querySelector(".p8")
+var p9 = document.querySelector(".p9")
 
 var r1 = document.getElementById("r1")
 var r2 = document.getElementById("r2")
@@ -23,6 +24,7 @@ var r5 = document.getElementById("r5")
 var r6 = document.getElementById("r6")
 var r7 = document.getElementById("r7")
 var r8 = document.getElementById("r8")
+var r9 = document.getElementById("r9")
 
 
 
@@ -81,6 +83,18 @@ r8.addEventListener("mouseover", image =>{
 r8.addEventListener("mouseout", image=>{
     p8.style.opacity = "0%"
 })
+
+r9.addEventListener("mouseover", image =>{
+    p9.style.opacity = "100%"
+})
+r9.addEventListener("mouseout", image=>{
+    p9.style.opacity = "0%"
+})
+
+
+
+
+
 
 document.addEventListener('scroll', function () {
     const scrollPosition = window.scrollY;
