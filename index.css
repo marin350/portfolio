@@ -8,7 +8,7 @@ body{
     font-family: "inter-tight-variable", sans-serif;
     overflow-x: hidden;
     background-color: black;
-    height: 1800px;
+    height: 1900px;
     margin: 0;
 }
 
@@ -116,6 +116,13 @@ a:hover{
     animation: images 0.5s 3.75s 1 forwards;
     opacity: 0;
 }
+.proj9{
+    top: -40%;
+    z-index: 40000;
+    animation: images 0.5s 4s 1 forwards;
+    opacity: 0;
+}
+
 @keyframes images{
     0% {opacity: 0;}
     100% {opacity: 100%;}
@@ -180,7 +187,7 @@ a:hover{
 }
 .work{
     position: relative;
-    top: -1100px;
+    top: -1300px;
     height: 100vh;
     font-size: 19px;
     margin-top: 2%;
@@ -303,11 +310,19 @@ marquee{
     top: -140%;
     border: 0.5px solid var(--blue);
  }
+ .p9{
+    max-width: 12%;
+    z-index: 1000;
+    opacity: 0%;
+    top: -250%;
+    position: relative;
+    border: 0.5px solid var(--blue);
+ }
  .p4{
     max-width: 15%; 
-    opacity: 0;
+    opacity: 0%;
     position: relative;
-    top: -220%;
+    top: -300%;
     left: -1%;
     z-index: 1000;
  }
@@ -315,7 +330,7 @@ marquee{
     max-width: 9%; 
     opacity: 0;
     position: relative;
-    top: -310%;
+    top: -400%;
     z-index: 1000;
  }
  .p6{
@@ -323,7 +338,7 @@ marquee{
     z-index: 1000;
     opacity: 0;
     position: relative;
-    top: -370%;
+    top: -450%;
     border: 0.5px solid var(--blue);
  }
  .p7{
@@ -331,14 +346,14 @@ marquee{
     z-index: 1000;
     opacity: 0;
     position: relative;
-    top: -450%;
+    top: -550%;
     border: 0.5px solid var(--blue);
  }
  .p8{
     max-width: 16%;
     z-index: 1000;
-    opacity: 0;
+    opacity: 0%;
     position: relative;
-    top: -520%;
+    top: -880%;
     border: 0.5px solid var(--blue);
  }
