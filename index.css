@@ -11,7 +11,13 @@ body{
     height: 1900px;
     margin: 0;
 }
-
+.drag-drop{
+    color: var(--ivory);
+    position: relative;
+    top: -540px;
+    margin-right: 2%;
+    text-align: right;
+}
 .header {
     position: sticky;
     top: 0;
