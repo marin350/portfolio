@@ -14,8 +14,13 @@ body{
 .drag-drop{
     color: var(--ivory);
     position: relative;
+<<<<<<< HEAD
     top: -600px;
     margin-right: 3%;
+=======
+    top: -540px;
+    margin-right: 2%;
+>>>>>>> 73bc86858c0c4b881de18972ce445bb4c4ebef79
     text-align: right;
 }
 .header {
@@ -94,7 +99,10 @@ a:hover{
     left: 50%;
     animation: images 0.5s 2.75s 1 forwards;
     opacity: 0;
+<<<<<<< HEAD
     z-index: 500000;
+=======
+>>>>>>> 73bc86858c0c4b881de18972ce445bb4c4ebef79
 
 }
 .proj5{
@@ -194,7 +202,11 @@ a:hover{
 }
 .work{
     position: relative;
+<<<<<<< HEAD
     top: -1220px;
+=======
+    top: -1300px;
+>>>>>>> 73bc86858c0c4b881de18972ce445bb4c4ebef79
     height: 100vh;
     font-size: 19px;
     margin-top: 2%;
@@ -300,15 +312,22 @@ marquee{
    max-width: 16%; 
    z-index: 1000;
    opacity: 0;
+<<<<<<< HEAD
    position: relative;
    top: 18%;
+=======
+>>>>>>> 73bc86858c0c4b881de18972ce445bb4c4ebef79
 }
 .p2{
     max-width: 10%;
     z-index: 1000;
     opacity: 0;
     position: relative;
+<<<<<<< HEAD
     top: -70%;
+=======
+    top: -80%;
+>>>>>>> 73bc86858c0c4b881de18972ce445bb4c4ebef79
     border: 0.5px solid var(--blue);
  }
  .p3{
@@ -316,6 +335,7 @@ marquee{
     z-index: 1000;
     opacity: 0;
     position: relative;
+<<<<<<< HEAD
     top: -130%;
     border: 0.5px solid var(--blue);
  }
@@ -324,6 +344,16 @@ marquee{
     z-index: 1000;
     opacity: 0%;
     top: -300%;
+=======
+    top: -140%;
+    border: 0.5px solid var(--blue);
+ }
+ .p9{
+    max-width: 12%;
+    z-index: 1000;
+    opacity: 0%;
+    top: -250%;
+>>>>>>> 73bc86858c0c4b881de18972ce445bb4c4ebef79
     position: relative;
     border: 0.5px solid var(--blue);
  }
@@ -363,6 +393,10 @@ marquee{
     z-index: 1000;
     opacity: 0%;
     position: relative;
+<<<<<<< HEAD
     top: -810%;
+=======
+    top: -880%;
+>>>>>>> 73bc86858c0c4b881de18972ce445bb4c4ebef79
     border: 0.5px solid var(--blue);
  }
