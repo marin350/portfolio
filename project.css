@@ -70,6 +70,10 @@ video{
     margin: 1%;
     border: 0.5px solid var(--lightblue);
 }
+.project3 img{
+    width: 35%;
+    margin: 1%;
+}
 
 .project-footer{
     padding-bottom: 20px;
