@@ -55,6 +55,11 @@ video{
     margin: 1%;
     border-radius: 10px;
 }
+.p9-video{
+    width: 30%;
+    border: none;
+    border-radius: 0px;
+}
 .project4 img{
     width: 40%;
     margin: 1%;
