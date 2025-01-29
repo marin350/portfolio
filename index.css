@@ -11,13 +11,6 @@ body{
     height: 1900px;
     margin: 0;
 }
-.drag-drop{
-    color: var(--ivory);
-    position: relative;
-    top: -600px;
-    margin-right: 3%;
-    text-align: right;
-}
 .header {
     position: sticky;
     top: 0;
@@ -59,15 +52,6 @@ a:hover{
     align-items: center;
     justify-content: center;
     left: 30%;
-}
-.draggable-container{
-    position: relative;
-
-}
-.draggable-img{
-    position: relative;
-    cursor: grab;
-    user-select: none;
 }
 
 .one{
@@ -116,7 +100,7 @@ a:hover{
     opacity: 0;
 }
 .proj7{
-    width: 230px;
+    width: 300px;
     top: -145%;
     left: -5%;
     animation: images 0.5s 3.5s 1 forwards;
@@ -327,18 +311,19 @@ marquee{
     border: 0.5px solid var(--blue);
  }
  .p4{
-    max-width: 15%; 
+    max-width: 10%; 
     opacity: 0%;
     position: relative;
-    top: -300%;
+    top: -250%;
     left: -1%;
     z-index: 1000;
+    border: 0.5px solid black;
  }
  .p5{
     max-width: 9%; 
     opacity: 0;
     position: relative;
-    top: -400%;
+    top: -420%;
     z-index: 1000;
  }
  .p6{
@@ -346,7 +331,7 @@ marquee{
     z-index: 1000;
     opacity: 0;
     position: relative;
-    top: -450%;
+    top: -480%;
     border: 0.5px solid var(--blue);
  }
  .p7{

@@ -60,6 +60,9 @@ video{
     border: none;
     border-radius: 0px;
 }
+#p4b{
+    border: 0.5px solid rgba(0, 0, 0, 0.551);
+}
 .project4 img{
     width: 40%;
     margin: 1%;
