@@ -97,3 +97,5 @@ document.addEventListener('scroll', function () {
     const scrollPosition = window.scrollY;
     document.querySelector('.scrolling-section').style.transform = `translateY(${-scrollPosition * 0.5}px)`;
 });
+
+
