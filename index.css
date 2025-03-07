@@ -324,7 +324,7 @@ marquee{
     max-width: 9%; 
     opacity: 0;
     position: relative;
-    top: -420%;
+    top: -400%;
     z-index: 1000;
  }
  .p6{
@@ -332,7 +332,7 @@ marquee{
     z-index: 1000;
     opacity: 0;
     position: relative;
-    top: -480%;
+    top: -460%;
     border: 0.5px solid var(--blue);
  }
  .p7{
@@ -340,7 +340,7 @@ marquee{
     z-index: 1000;
     opacity: 0;
     position: relative;
-    top: -550%;
+    top: -600%;
     border: 0.5px solid var(--blue);
  }
  .p8{
