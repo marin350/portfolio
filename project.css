@@ -8,6 +8,7 @@
 body{
     background-color: var(--ivory);
     height: 100vh;
+    font-weight: 400;
 }
 .container{
     background-color: var(--ivory);
@@ -24,9 +25,14 @@ a{
 }
 .project-title{
     width: 30%;
+    font-weight: 400;
+}
+h2{
+    font-weight: 400;
 }
 h4{
-    margin-top: -3%;
+    margin-top: -5%;
+    font-weight: 400;
 }
 .project-description{
     width: 40%;
