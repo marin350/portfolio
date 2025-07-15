@@ -1,101 +1,121 @@
-function navigateToPage(pageURL) {
-    window.location.href = pageURL; 
-  }
+const work = [
+    {
+      "id": "1",
+      "title": "Whitney Museum of American Art",
+      "img": ["imgs/1a.png", "imgs/1b.png"],
+      "description" : "Work created during summer internship at the Whitney Museum of American Art."
+    },
+    {
+      "id": "2",
+      "title": "The Juggernaut",
+      "img": ["imgs/2a.jpg", "imgs/2b.JPG", "imgs/2c.JPG", "imgs/2d.JPG", "imgs/2e.gif", "imgs/2f.gif", "imgs/2k.mp4"],
+      "description": "Visual Identity for the Juggernaut Summit + Merchandise Collection."
+    },
+    {
+        "id": "3",
+        "title": "Quill Typeface",
+        "img": ["imgs/3a.png", "imgs/3b.png", "imgs/3c.png", "imgs/3d.gif", "imgs/3e.mp4"],
+        "description": "Typeface + Specimen inspired by woodcut type and German playing cards."
+      },
+      {
+        "id": "4",
+        "title": "A_Guide_To_Morse_Code",
+        "img": ["imgs/4a.png", "imgs/4b.png", "imgs/4c.png", "imgs/4d.png", "imgs/4e.png", "imgs/4f.png", "imgs/4g.png", "imgs/4h.png", "imgs/4i.png", "imgs/4j.png", "imgs/4k.png", "imgs/4l.png", "imgs/4m.png", "imgs/4n.png", "imgs/4o.png"],
+        "description": "Pocket-sized coptic stitched guide to understanding Morse Code."
+      },
+      {
+        "id": "5",
+        "title": "Modern Girl Poster",
+        "img": ["imgs/5a.png"],
+        "description": "Poster design for the song 'Modern Girl' by The Bleachers."
+      },
+      {
+        "id": "6",
+        "title": "Fluxus Manifesto Poster",
+        "img": ["imgs/6a.jpg"],
+        "description": "Poster Design for Fluxus Manifesto."
+      },
+      {
+        "id": "7",
+        "title": "New York City Wiki Book",
+        "img": ["imgs/6a.png", "imgs/6b.png", "imgs/6c.png", "imgs/6d.png", "imgs/6e.png", "imgs/6f.png", "imgs/6g.png", "imgs/6h.png", "imgs/6i.png", "imgs/6j.png"],
+        "description": "Book design using the New York City Wikipedia page." 
+      },
+      {
+        "id": "8",
+        "title": "Timepiece Archive",
+        "img": ["imgs/8a.mp4"],
+        "description": "Website designed as an archive/collection of personal watches. <a href='https://marin350.github.io/timepiece-archive/' target='_blank' '>Visit site →</a>"
+      },
+      {
+        "id": "9",
+        "title": "Printmaking + Artists' Books",
+        "img": ["imgs/9a.png", "imgs/9g.mp4", "imgs/9c.png", "imgs/9b.jpg"],
+        "description": "Assorted works including woodcut relief printmaking and hand-made books."
+      }
+  ];
+  
 
-var row = document.querySelector("tr")
+  
+const imageDisplay = document.getElementById('image-display');
+const workItems = document.querySelectorAll('.work');
+let currentImgIndex = 0;
+let currentProject = null;
 
-var images = document.querySelectorAll(".images")
+workItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const id = item.getAttribute('data-id');
+      const project = work.find(w => w.id === id);
+      console.log("click on project:", project);
+  
+      if (project) {
+        // Set active project and image
+        currentProject = project;
+        currentImgIndex = 0;
+        showImage(currentProject.img);
+  
+        // REMOVE underline from all items
+        workItems.forEach(w => w.classList.remove('work-und'));
+  
+        // ADD underline to the clicked one
+        item.classList.add('work-und');
+      }
+    });
+  });
 
-var p1 = document.querySelector(".p1")
-var p2 = document.querySelector(".p2")
-var p3 = document.querySelector(".p3")
-var p4 = document.querySelector(".p4")
-var p5 = document.querySelector(".p5")
-var p6 = document.querySelector(".p6")
-var p7 = document.querySelector(".p7")
-var p8 = document.querySelector(".p8")
-var p9 = document.querySelector(".p9")
+  imageDisplay.onclick = (e) => {
+    if (!currentProject) return;
+  
+    const bounds = imageDisplay.getBoundingClientRect();
+    const clickX = e.clientX - bounds.left; // X coordinate inside the imageDisplay
+    const middle = bounds.width / 2;
+  
+    if (clickX > middle) {
+      // Clicked on right half — go forward
+      currentImgIndex = (currentImgIndex + 1) % currentProject.img.length;
+    } else {
+      // Clicked on left half — go backward
+      currentImgIndex = (currentImgIndex - 1 + currentProject.img.length) % currentProject.img.length;
+    }
+  
+    showImage(currentProject.img);
+    imageDisplay.scrollIntoView({ behavior: 'smooth' });
+  };
+  
 
-var r1 = document.getElementById("r1")
-var r2 = document.getElementById("r2")
-var r3 = document.getElementById("r3")
-var r4 = document.getElementById("r4")
-var r5 = document.getElementById("r5")
-var r6 = document.getElementById("r6")
-var r7 = document.getElementById("r7")
-var r8 = document.getElementById("r8")
-var r9 = document.getElementById("r9")
+function showImage(images) {
+  const currentFile = images[currentImgIndex];
+  const isVideo = currentFile.match(/\.(mp4|webm|mov)$/i);
+  const description = currentProject.description || "";
 
-
-
-r1.addEventListener("mouseover", image =>{
-    p1.style.opacity = "100%"
-})
-r1.addEventListener("mouseout", image=>{
-    p1.style.opacity = "0%"
-})
-
-r2.addEventListener("mouseover", image =>{
-    p2.style.opacity = "100%"
-})
-r2.addEventListener("mouseout", image=>{
-    p2.style.opacity = "0%"
-})
-
-r3.addEventListener("mouseover", image =>{
-    p3.style.opacity = "100%"
-})
-r3.addEventListener("mouseout", image=>{
-    p3.style.opacity = "0%"
-})
-
-r4.addEventListener("mouseover", image =>{
-    p4.style.opacity = "100%"
-})
-r4.addEventListener("mouseout", image=>{
-    p4.style.opacity = "0%"
-})
-
-r5.addEventListener("mouseover", image =>{
-    p5.style.opacity = "100%"
-})
-r5.addEventListener("mouseout", image=>{
-    p5.style.opacity = "0%"
-})
-
-r6.addEventListener("mouseover", image =>{
-    p6.style.opacity = "100%"
-})
-r6.addEventListener("mouseout", image=>{
-    p6.style.opacity = "0%"
-})
-
-r7.addEventListener("mouseover", image =>{
-    p7.style.opacity = "100%"
-})
-r7.addEventListener("mouseout", image=>{
-    p7.style.opacity = "0%"
-})
-
-r8.addEventListener("mouseover", image =>{
-    p8.style.opacity = "100%"
-})
-r8.addEventListener("mouseout", image=>{
-    p8.style.opacity = "0%"
-})
-
-r9.addEventListener("mouseover", image =>{
-    p9.style.opacity = "100%"
-})
-r9.addEventListener("mouseout", image=>{
-    p9.style.opacity = "0%"
-})
-
-
-
-document.addEventListener('scroll', function () {
-    const scrollPosition = window.scrollY;
-    document.querySelector('.scrolling-section').style.transform = `translateY(${-scrollPosition * 0.5}px)`;
-});
-
-
+  imageDisplay.innerHTML = `
+    ${isVideo 
+      ? `<video src="${currentFile}" autoplay loop muted playsinline></video>`
+      : `<img src="${currentFile}" alt="project image">`
+    }
+    <div class="image-info-bar">
+      <div class="image-description">${description}</div>
+      <div class="image-counter">${currentImgIndex + 1} / ${images.length}</div>
+    </div>
+  `;
+}
