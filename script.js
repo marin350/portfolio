@@ -57,32 +57,52 @@ const work = [
   
 
   
-const imageDisplay = document.getElementById('image-display');
-const workItems = document.querySelectorAll('.work');
-let currentImgIndex = 0;
-let currentProject = null;
-
-workItems.forEach(item => {
-    item.addEventListener('click', () => {
-      const id = item.getAttribute('data-id');
-      const project = work.find(w => w.id === id);
-      console.log("click on project:", project);
+  const imageDisplay = document.getElementById('image-display');
+  const workItems = document.querySelectorAll('.work');
+  let currentImgIndex = 0;
+  let currentProject = null;
   
-      if (project) {
-        // Set active project and image
-        currentProject = project;
-        currentImgIndex = 0;
-        showImage(currentProject.img);
+  // New function to toggle cursor style based on image count
+  function updateCursorForImageCount() {
+    if (!currentProject) {
+      // No project selected — show default image, so disable arrows
+      imageDisplay.classList.add('one-image');
+      return;
+    }
   
-        // REMOVE underline from all items
-        workItems.forEach(w => w.classList.remove('work-und'));
+    if (currentProject.img.length === 1) {
+      imageDisplay.classList.add('one-image');
+    } else {
+      imageDisplay.classList.remove('one-image');
+    }
+  }
   
-        // ADD underline to the clicked one
-        item.classList.add('work-und');
-      }
+  
+  workItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const id = item.getAttribute('data-id');
+        const project = work.find(w => w.id === id);
+        console.log("click on project:", project);
+    
+        if (project) {
+          // Set active project and image
+          currentProject = project;
+          currentImgIndex = 0;
+  
+          // <-- CALL HERE to update cursor based on image count
+          updateCursorForImageCount();
+  
+          showImage(currentProject.img);
+    
+          // REMOVE underline from all items
+          workItems.forEach(w => w.classList.remove('work-und'));
+    
+          // ADD underline to the clicked one
+          item.classList.add('work-und');
+        }
+      });
     });
-  });
-
+  
   imageDisplay.onclick = (e) => {
     if (!currentProject) return;
   
@@ -102,20 +122,24 @@ workItems.forEach(item => {
     imageDisplay.scrollIntoView({ behavior: 'smooth' });
   };
   
+  function showImage(images) {
+    const currentFile = images[currentImgIndex];
+    const isVideo = currentFile.match(/\.(mp4|webm|mov)$/i);
+    const description = currentProject.description || "";
+  
+    imageDisplay.innerHTML = `
+      ${isVideo 
+        ? `<video src="${currentFile}" autoplay loop muted playsinline></video>`
+        : `<img src="${currentFile}" alt="project image">`
+      }
+      <div class="image-info-bar">
+        <div class="image-description">${description}</div>
+        <div class="image-counter">${currentImgIndex + 1} / ${images.length}</div>
+      </div>
+    `;
 
-function showImage(images) {
-  const currentFile = images[currentImgIndex];
-  const isVideo = currentFile.match(/\.(mp4|webm|mov)$/i);
-  const description = currentProject.description || "";
+  updateCursorForImageCount();
 
-  imageDisplay.innerHTML = `
-    ${isVideo 
-      ? `<video src="${currentFile}" autoplay loop muted playsinline></video>`
-      : `<img src="${currentFile}" alt="project image">`
-    }
-    <div class="image-info-bar">
-      <div class="image-description">${description}</div>
-      <div class="image-counter">${currentImgIndex + 1} / ${images.length}</div>
-    </div>
-  `;
-}
+  }
+
+  

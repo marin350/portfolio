@@ -32,7 +32,6 @@ body{
     letter-spacing: -1px;
 }
 
-/* navigation */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -59,7 +58,7 @@ a:hover{
     cursor: pointer;
     color: var(--lightblue);
 }
-/* intro */
+
 .content::before {
     content: 'graphic design';
     border-bottom: 2px solid var(--ivory);
@@ -74,7 +73,6 @@ a:hover{
     100% {content: 'graphic design';}
 }
 
-/* image display */
 .image-display {
     position: fixed;
     left: 0;
@@ -86,6 +84,30 @@ a:hover{
     align-items: center;
     justify-content: center;
     background-color: black;
+}
+
+.image-display::before,
+.image-display::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 10;
+}
+
+.image-display::before {
+    left: 0;
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 24 24'%3E%3Cpath fill='%23c5bbf6' d='M10 6v4h10v4H10v4L4 12l6-6z'/%3E%3C/svg%3E") 4 12, auto;
+}
+
+.image-display::after {
+    right: 0;
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 24 24'%3E%3Cpath fill='%23c5bbf6' d='M14 6v4H4v4h10v4l6-6-6-6z'/%3E%3C/svg%3E") 20 12, auto;
+}
+.image-display.one-image::before,
+.image-display.one-image::after {
+  cursor: default !important;
 }
 
 .image-display img {
