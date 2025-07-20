@@ -31,9 +31,6 @@ body{
     color: var(--ivory); 
     letter-spacing: -1px;
 }
-.blue{
-    color: var(--lightblue);
-}
 
 /* navigation */
 .container {
@@ -124,6 +121,9 @@ a:hover{
 hr{
     padding: 0;
     margin-top: 0%;
+    width: 100%;
     margin-bottom: 1.5%;
 }
-  
+footer{
+    margin-bottom: 1%;
+}
