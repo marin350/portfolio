@@ -50,7 +50,7 @@ const work = [
       {
         "id": "9",
         "title": "Printmaking + Artists' Books",
-        "img": ["imgs/9a.png", "imgs/9g.mp4", "imgs/9c.png", "imgs/9b.jpg"],
+        "img": ["imgs/9a.png", "imgs/9d.png","imgs/9e.png", "imgs/9g.mp4","imgs/9f.png","imgs/9h.png","imgs/9j.png", "imgs/9i.png", "imgs/9c.png", "imgs/9b.jpg"],
         "description": "Assorted works including woodcut relief printmaking and hand-made books."
       }
   ];
@@ -61,15 +61,12 @@ const work = [
   const workItems = document.querySelectorAll('.work');
   let currentImgIndex = 0;
   let currentProject = null;
-  
-  // New function to toggle cursor style based on image count
+
   function updateCursorForImageCount() {
     if (!currentProject) {
-      // No project selected — show default image, so disable arrows
       imageDisplay.classList.add('one-image');
       return;
     }
-  
     if (currentProject.img.length === 1) {
       imageDisplay.classList.add('one-image');
     } else {
