@@ -23,6 +23,22 @@ body{
     padding-bottom: 0;
 }
 
+.image-info-bar {
+    position: relative;
+    z-index: 100;
+    pointer-events: auto;
+  }
+  
+  .image-description a:hover {
+    color: var(--lightblue);
+    cursor: pointer;
+  }
+  
+
+a:hover{
+    color: var(--lightblue);
+}
+
 .header {
     position: sticky;
     top: 0;

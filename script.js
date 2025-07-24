@@ -45,7 +45,7 @@ const work = [
         "id": "8",
         "title": "Timepiece Archive",
         "img": ["imgs/8a.mp4"],
-        "description": "Website designed as an archive/collection of personal watches. <a href='https://marin350.github.io/timepiece-archive/' target='_blank' '>Visit site →</a>"
+        "description": "Website designed as an archive/collection of personal watches. <a href='https://marin350.github.io/timepiece-archive/' target='_blank'>Visit site →</a>"
       },
       {
         "id": "9",
