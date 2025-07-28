@@ -2,7 +2,7 @@ const work = [
     {
       "id": "1",
       "title": "Whitney Museum of American Art",
-      "img": ["imgs/1a.png", "imgs/1b.png"],
+      "img": ["imgs/1a.png", "imgs/1b.png", "imgs/1c.gif"],
       "description" : "Work created during summer internship at the Whitney Museum of American Art."
     },
     {
