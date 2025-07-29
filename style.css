@@ -29,7 +29,7 @@ body{
     pointer-events: auto;
   }
   
-  .image-description a:hover {
+.image-description a:hover {
     color: var(--lightblue);
     cursor: pointer;
   }
@@ -147,9 +147,9 @@ a:hover{
   }
   
 .image-counter {
-    position: absolute;
+    position: fixed;
     bottom: 5%;
-    right: 5%;
+    left: 55%;
     color: var(--ivory);
 }
 
