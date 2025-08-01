@@ -2,7 +2,7 @@ const work = [
     {
       "id": "1",
       "title": "Whitney Museum of American Art",
-      "img": ["imgs/1a.png", "imgs/1b.png", "imgs/1c.gif"],
+      "img": ["imgs/1a.png", "imgs/1b.png", "imgs/1d.png", "imgs/1c.gif"],
       "description" : "Work created during summer internship at the Whitney Museum of American Art."
     },
     {
@@ -28,6 +28,18 @@ const work = [
         "title": "Modern Girl Poster",
         "img": ["imgs/5a.png"],
         "description": "Poster design for the song 'Modern Girl' by The Bleachers."
+      },
+      {
+        "id": "11",
+        "title": "Octopus's Garden",
+        "img": ["imgs/11.png"],
+        "description": "Poster design for the song 'Octopus's Garden' by The Beatles."
+      },
+      {
+        "id": "10",
+        "title": "Tiny Moves Poster",
+        "img": ["imgs/10.png"],
+        "description": "Poster design for the song 'Tiny Moves' by The Bleachers."
       },
       {
         "id": "6",
