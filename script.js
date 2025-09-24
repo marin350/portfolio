@@ -24,28 +24,16 @@ const work = [
         "description": "Pocket-sized coptic stitched guide to understanding Morse Code."
       },
       {
-        "id": "5",
-        "title": "Modern Girl Poster",
-        "img": ["imgs/5a.png"],
-        "description": "Poster design for the song 'Modern Girl' by The Bleachers."
-      },
-      {
-        "id": "11",
-        "title": "Octopus's Garden",
-        "img": ["imgs/11.png"],
-        "description": "Poster design for the song 'Octopus's Garden' by The Beatles."
-      },
-      {
-        "id": "10",
-        "title": "Tiny Moves Poster",
-        "img": ["imgs/10.png"],
-        "description": "Poster design for the song 'Tiny Moves' by The Bleachers."
-      },
-      {
         "id": "6",
-        "title": "Fluxus Manifesto Poster",
-        "img": ["imgs/6a.jpg"],
-        "description": "Poster Design for Fluxus Manifesto."
+        "title": "Book Covers",
+        "img": ["imgs/6n.png", "imgs/6o.png", "imgs/6m.png"],
+        "description": "Re-designed book covers."
+      },
+      {
+        "id": "5",
+        "title": "Poster Designs",
+        "img": ["imgs/5a.png", "imgs/11.png", "imgs/10.png", "imgs/6a.jpg"],
+        "description": "Posters created for songs, musicians, and art."
       },
       {
         "id": "7",
@@ -62,7 +50,7 @@ const work = [
       {
         "id": "9",
         "title": "Printmaking + Artists' Books",
-        "img": ["imgs/9a.png", "imgs/9d.png","imgs/9e.png", "imgs/9g.mp4","imgs/9f.png","imgs/9h.png","imgs/9j.png", "imgs/9i.png", "imgs/9c.png", "imgs/9b.jpg"],
+        "img": ["imgs/9l.png", "imgs/9m.png", "imgs/9d.png", "imgs/9e.png", "imgs/9g.mp4","imgs/9f.png","imgs/9h.png","imgs/9i.png", "imgs/9j.png", "imgs/9n.png"],
         "description": "Assorted works including woodcut relief printmaking and hand-made books."
       }
   ];
