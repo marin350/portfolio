@@ -1,0 +1,173 @@
+:root{
+    --blue : #2e15a4;
+    --lightblue : #c5bbf6;
+    --ivory : #fafaf2;
+}
+
+body{
+    font-family: acumin-pro, sans-serif;
+    background-color: black;
+    color: var(--ivory);
+    font-weight: 300;
+    font-size: 20px;
+}
+.image-header {
+    position: fixed;
+    top: 1%;
+    left: 2%;
+    width: 60%;
+    text-align: left;
+    padding: 12px 0;
+    z-index: 1001;
+    border-bottom: 2px solid var(--ivory);
+    padding-bottom: 0;
+}
+
+.image-info-bar {
+    position: relative;
+    z-index: 100;
+    pointer-events: auto;
+  }
+  
+.image-description a:hover {
+    color: var(--lightblue);
+    cursor: pointer;
+  }
+  
+
+a:hover{
+    color: var(--lightblue);
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: black; 
+    color: var(--ivory); 
+    letter-spacing: -1px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1%;
+    position: fixed;
+    left: 62%;
+    background-color: black; 
+    color: var(--ivory); 
+    width: 33%;
+}
+a{
+    text-decoration: none;
+    color: var(--ivory);
+}
+a:hover{
+    color: var(--lightblue);
+}
+
+.work-und {
+    color: var(--blue); 
+}
+.work:hover{
+    cursor: pointer;
+    color: var(--lightblue);
+}
+
+.content::before {
+    content: 'graphic design';
+    border-bottom: 2px solid var(--ivory);
+    animation: content 4s 0.5s infinite forwards;
+    color: var(--lightblue);
+}
+@keyframes content {
+    0% {content: 'graphic design';}
+    25% {content: 'typography';}
+    50% {content: 'web design';}
+    75% {content: 'posters';}
+    100% {content: 'graphic design';}
+}
+
+.image-display {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 60%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.image-display::before,
+.image-display::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 10;
+}
+
+.image-display::before {
+    left: 0;
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 24 24'%3E%3Cg stroke='%23c5bbf6' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='20' y1='12' x2='4' y2='12' /%3E%3Cpolyline points='10 6 4 12 10 18' /%3E%3C/g%3E%3C/svg%3E") 4 12, auto;
+
+
+
+}
+
+.image-display::after {
+    right: 0;
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 24 24'%3E%3Cg stroke='%23c5bbf6' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='4' y1='12' x2='20' y2='12' /%3E%3Cpolyline points='14 6 20 12 14 18' /%3E%3C/g%3E%3C/svg%3E") 20 12, auto;
+
+
+
+}
+.image-display.one-image::before,
+.image-display.one-image::after {
+  cursor: default !important;
+}
+
+.image-display img {
+    max-width: 77%;
+    max-height: 77%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.image-display video {
+    max-width: 77%;
+    max-height: 77%;
+    object-fit: contain;
+    cursor: pointer;
+  }
+  
+.image-counter {
+    position: fixed;
+    bottom: 5%;
+    left: 55%;
+    color: var(--ivory);
+}
+
+
+.image-description{
+    width: 50%;
+    color: var(--ivory);
+    position: fixed;
+    bottom: 5%;
+    left: 2%;
+}
+
+hr{
+    padding: 0;
+    margin-top: 0%;
+    width: 100%;
+    margin-bottom: 1.5%;
+}
+footer{
+    margin-bottom: 1%;
+}
