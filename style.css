@@ -68,7 +68,7 @@ a:hover{
 }
 
 .work-und {
-    color: var(--blue); 
+    color: var(--lightblue); 
 }
 .work:hover{
     cursor: pointer;
@@ -79,7 +79,6 @@ a:hover{
     content: 'graphic design';
     border-bottom: 2px solid var(--ivory);
     animation: content 4s 0.5s infinite forwards;
-    color: var(--lightblue);
 }
 @keyframes content {
     0% {content: 'graphic design';}

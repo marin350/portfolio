@@ -32,7 +32,7 @@ const work = [
       {
         "id": "6",
         "title": "Book Covers",
-        "img": ["imgs/6n.png", "imgs/6o.png", "imgs/6m.png"],
+        "img": ["imgs/6n.png", "imgs/6o.png", "imgs/6m.png", "imgs/6s.png", "imgs/6t.png"],
         "description": "Re-designed book covers."
       },
       {
