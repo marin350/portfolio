@@ -56,8 +56,8 @@ const work = [
       {
         "id": "9",
         "title": "Printmaking + Artists' Books",
-        "img": ["imgs/9l.png", "imgs/9m.png", "imgs/9d.png", "imgs/9e.png", "imgs/9g.mp4","imgs/9f.png","imgs/9h.png","imgs/9i.png", "imgs/9j.png", "imgs/9n.png"],
-        "description": "Assorted works including woodcut relief printmaking and hand-made books."
+        "img": ["imgs/9o.JPG","imgs/9l.png", "imgs/9m.png", "imgs/9n.png", "imgs/9d.png", "imgs/9e.png", "imgs/9g.mp4","imgs/9f.png","imgs/9h.png","imgs/9i.png", "imgs/9j.png"],
+        "description": "Assorted works including relief printmaking, mixed-media collographs, letterpress and hand-made books."
       }
   ];
   
