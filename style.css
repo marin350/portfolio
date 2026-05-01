@@ -104,10 +104,9 @@ a{
 
 
 .image-display video {
-    max-width: 100%;
+    max-width: 90%;
     max-height: 90%;
     object-fit: fill;
-    border: 0.5px solid #b1b1ab;
 
   }
   
