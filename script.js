@@ -8,19 +8,19 @@ const work = [
     {
       "id": "2",
       "title": "The Juggernaut",
-      "img": ["imgs/2a.jpg", "imgs/2b.JPG", "imgs/2c.JPG", "imgs/2d.JPG", "imgs/2e.gif", "imgs/2f.gif", "imgs/2r.JPG", "imgs/2p.JPG", "imgs/2k.mp4"],
+      "img": ["imgs/2a.jpg", "imgs/2b.JPG", "imgs/2c.JPG", "imgs/2d.JPG", "imgs/2e.gif", "imgs/2f.gif", "imgs/2r.JPG", "imgs/2p.JPG", "imgs/2k.gif"],
       "description": "Visual Identity for the Juggernaut Summit + Merchandise Collection. Summit images by Krista Schlueter"
     },
     {
       "id": "10",
       "title": "Parallels and Patterns",
-      "img": ["imgs/10c.jpg", "imgs/10b.jpg", "imgs/10a.mp4", "imgs/10d.jpg"],
+      "img": ["imgs/10c.jpg", "imgs/10b.jpg", "imgs/10a.gif", "imgs/10d.jpg"],
       "description": "Reflecing on multi-generational family photos, Indian artworks and what patterns are present within them."
     },
     {
         "id": "3",
         "title": "Quill Typeface",
-        "img": ["imgs/3a.png", "imgs/3b.png", "imgs/3c.png", "imgs/3d.gif", "imgs/3e.mp4"],
+        "img": ["imgs/3a.png", "imgs/3b.png", "imgs/3c.png", "imgs/3d.gif", "imgs/3e.gif"],
         "description": "Typeface + Specimen inspired by woodcut type and German playing cards."
       },
       {
@@ -44,19 +44,19 @@ const work = [
       {
         "id": "7",
         "title": "Handlooms as Heirloom",
-        "img": ["imgs/7a.png", "imgs/7c.png", "imgs/7d.mp4", "imgs/7h.png",  "imgs/7i.png",  "imgs/7g.png",  "imgs/7b.png",  "imgs/7e.mp4"],
+        "img": ["imgs/7a.png", "imgs/7c.png", "imgs/7d.gif", "imgs/7h.png",  "imgs/7i.png",  "imgs/7g.png",  "imgs/7b.png",  "imgs/7e.gif"],
         "description": "Parsons Communication Design BFA Thesis. <a href='https://marin350.github.io/handlooms_as_heirlooms/' target='_blank'>Visit site →</a>" 
       },
       {
         "id": "8",
         "title": "Timepiece Archive",
-        "img": ["imgs/8a.mp4"],
+        "img": ["imgs/8a.gif"],
         "description": "Website designed as an archive/collection of personal watches. <a href='https://marin350.github.io/timepiece-archive/' target='_blank'>Visit site →</a>"
       },
       {
         "id": "9",
         "title": "Printmaking + Artists' Books",
-        "img": ["imgs/9o.JPG","imgs/9l.png", "imgs/9m.png", "imgs/9n.png", "imgs/9d.png", "imgs/9e.png", "imgs/9g.mp4","imgs/9f.png","imgs/9h.png","imgs/9i.png", "imgs/9j.png"],
+        "img": ["imgs/9o.JPG","imgs/9l.png", "imgs/9m.png", "imgs/9n.png", "imgs/9d.png", "imgs/9e.png", "imgs/9g.gif","imgs/9f.png","imgs/9h.png","imgs/9i.png", "imgs/9j.png"],
         "description": "Assorted works including relief printmaking, mixed-media collographs, letterpress and hand-made books."
       }
   ];
@@ -81,7 +81,7 @@ function showImage(direction = 'right') {
 
   const images = currentProject.img;
   const currentFile = images[currentImgIndex];
-  const isVideo = currentFile.match(/\.(mp4|webm|mov)$/i);
+  const isVideo = currentFile.match(/\.(gif|webm|mov)$/i);
   const description = currentProject.description || "";
 
   // Create new media element
