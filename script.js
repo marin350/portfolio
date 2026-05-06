@@ -84,14 +84,35 @@ function showImage(direction = 'right') {
   const isVideo = currentFile.match(/\.(mp4|webm|mov)$/i);  const description = currentProject.description || "";
 
   // Create new media element
-  const newMedia = document.createElement(isVideo ? 'video' : 'img');
+  let newMedia;
+
+if (isVideo) {
+  newMedia = document.createElement('video');
+
+  const source = document.createElement('source');
+  source.src = currentFile;
+  source.type = 'video/mp4';
+
+  newMedia.appendChild(source);
+} else {
+  newMedia = document.createElement('img');
   newMedia.src = currentFile;
+}
   newMedia.classList.add('slide-item');
   if (isVideo) {
     newMedia.autoplay = true;
     newMedia.loop = true;
     newMedia.muted = true;
     newMedia.playsInline = true;
+  
+    newMedia.setAttribute("webkit-playsinline", "");
+    newMedia.setAttribute("preload", "auto");
+  
+    newMedia.onloadeddata = () => {
+      newMedia.play().catch(err => {
+        console.log("Video autoplay failed:", err);
+      });
+    };
   }
 
   // Add new media to display
