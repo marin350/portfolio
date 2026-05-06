@@ -8,7 +8,7 @@ const work = [
   {
     "id": "2",
     "title": "The Juggernaut",
-    "img": ["imgs/2a.jpg", "imgs/2b.JPG", "imgs/2c.JPG", "imgs/2d.JPG", "imgs/2e.gif", "imgs/2f.gif", "imgs/2r.JPG", "imgs/2p.JPG", "imgs/2k.mp4"],
+    "img": ["imgs/2a.jpg", "imgs/2b.jpg", "imgs/2c.jpg", "imgs/2d.jpg", "imgs/2e.gif", "imgs/2f.gif", "imgs/2r.jpg", "imgs/2p.jpg", "imgs/2k.mp4"],
     "description": "Visual Identity for the Juggernaut Summit + Merchandise Collection. Summit images by Krista Schlueter"
   },
   {
@@ -56,7 +56,7 @@ const work = [
     {
       "id": "9",
       "title": "Printmaking + Artists' Books",
-      "img": ["imgs/9o.JPG","imgs/9l.png", "imgs/9m.png", "imgs/9n.png", "imgs/9d.png", "imgs/9e.png", "imgs/9g.mp4","imgs/9f.png","imgs/9h.png","imgs/9i.png", "imgs/9j.png"],
+      "img": ["imgs/9o.jpg","imgs/9l.png", "imgs/9m.png", "imgs/9n.png", "imgs/9d.png", "imgs/9e.png", "imgs/9g.mp4","imgs/9f.png","imgs/9h.png","imgs/9i.png", "imgs/9j.png"],
       "description": "Assorted works including relief printmaking, mixed-media collographs, letterpress and hand-made books."
     }
 ];
@@ -81,7 +81,7 @@ if (!currentProject) return;
 
 const images = currentProject.img;
 const currentFile = images[currentImgIndex];
-const isVideo = currentFile.match(/\.(mp4|webm|mov)$/i);
+const isVideo = /\.(mp4|webm|mov)$/i.test(currentFile);
 const description = currentProject.description || "";
 
 // Create new media element
