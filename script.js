@@ -8,7 +8,7 @@ const work = [
   {
     "id": "2",
     "title": "The Juggernaut",
-    "img": ["imgs/2a.jpg", "imgs/2b.jpg", "imgs/2c.jpg", "imgs/2d.jpg", "imgs/2e.gif", "imgs/2f.gif", "imgs/2r.jpg", "imgs/2p.jpg", "imgs/2k.mp4"],
+    "img": ["imgs/2a.jpg", "imgs/2b.JPG", "imgs/2c.JPG", "imgs/2d.JPG", "imgs/2e.gif", "imgs/2f.gif", "imgs/2r.JPG", "imgs/2p.JPG", "imgs/2k.mp4"],
     "description": "Visual Identity for the Juggernaut Summit + Merchandise Collection. Summit images by Krista Schlueter"
   },
   {
