@@ -85,15 +85,31 @@ const isVideo = /\.(mp4|webm|mov)$/i.test(currentFile);
 const description = currentProject.description || "";
 
 // Create new media element
-const newMedia = document.createElement(isVideo ? 'video' : 'img');
-newMedia.src = currentFile;
-newMedia.classList.add('slide-item');
+let newMedia;
+
 if (isVideo) {
+  newMedia = document.createElement('video');
+
+  const source = document.createElement('source');
+  source.src = currentFile;
+  source.type = 'video/mp4';
+
+  newMedia.appendChild(source);
+
   newMedia.autoplay = true;
   newMedia.loop = true;
   newMedia.muted = true;
   newMedia.playsInline = true;
+
+  newMedia.load();
+} else {
+  newMedia = document.createElement('img');
+  newMedia.src = currentFile;
 }
+
+newMedia.classList.add('slide-item');
+
+console.log(currentFile, isVideo); 
 
 // Add new media to display
 imageDisplay.appendChild(newMedia);

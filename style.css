@@ -99,14 +99,14 @@ a{
 .image-display img {
     max-width: 90%;
     max-height: 90%;
-    object-fit: fill;
+    object-fit: contain;
 }
 
 
 .image-display video {
     max-width: 90%;
     max-height: 90%;
-    object-fit: fill;
+    object-fit: contain;
   }
   
 .image-counter {
