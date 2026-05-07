@@ -8,19 +8,19 @@ const work = [
   {
     "id": "2",
     "title": "The Juggernaut",
-    "img": ["imgs/2a.jpg", "imgs/2b.jpg", "imgs/2c.jpg", "imgs/2d.jpg", "imgs/2e.gif", "imgs/2f.gif", "imgs/2r.jpg", "imgs/2p.jpg", "imgs/2k.gif"],
+    "img": ["imgs/2a.jpg", "imgs/2b.jpg", "imgs/2c.jpg", "imgs/2d.jpg", "imgs/2e.gif", "imgs/2f.gif", "imgs/2r.jpg", "imgs/2p.jpg", "imgs/2k.mp4"],
     "description": "Visual Identity for the Juggernaut Summit + Merchandise Collection. Summit images by Krista Schlueter"
   },
   {
     "id": "10",
     "title": "Parallels and Patterns",
-    "img": ["imgs/10c.jpg", "imgs/10b.jpg", "imgs/10a.gif", "imgs/10d.jpg"],
+    "img": ["imgs/10c.jpg", "imgs/10b.jpg", "imgs/10a.mp4", "imgs/10d.jpg"],
     "description": "Reflecing on multi-generational family photos, Indian artworks and what patterns are present within them."
   },
   {
       "id": "3",
       "title": "Quill Typeface",
-      "img": ["imgs/3a.png", "imgs/3b.png", "imgs/3c.png", "imgs/3d.gif", "imgs/3e.gif"],
+      "img": ["imgs/3a.png", "imgs/3b.png", "imgs/3c.png", "imgs/3d.gif", "imgs/3e.mp4"],
       "description": "Typeface + Specimen inspired by woodcut type and German playing cards."
     },
     {
@@ -44,13 +44,13 @@ const work = [
     {
       "id": "7",
       "title": "Handlooms as Heirloom",
-      "img": ["imgs/7a.png", "imgs/7c.png", "imgs/7d.gif", "imgs/7h.png",  "imgs/7i.png",  "imgs/7g.png",  "imgs/7b.png",  "imgs/7e.gif"],
+      "img": ["imgs/7a.png", "imgs/7c.png", "imgs/7d.mp4", "imgs/7h.png",  "imgs/7i.png",  "imgs/7g.png",  "imgs/7b.png",  "imgs/7e.mp4"],
       "description": "Parsons Communication Design BFA Thesis. <a href='https://marin350.github.io/handlooms_as_heirlooms/' target='_blank'>Visit site →</a>" 
     },
     {
       "id": "8",
       "title": "Timepiece Archive",
-      "img": ["imgs/8a.gif"],
+      "img": ["imgs/8a.mp4"],
       "description": "Website designed as an archive/collection of personal watches. <a href='https://marin350.github.io/timepiece-archive/' target='_blank'>Visit site →</a>"
     },
     {
@@ -82,26 +82,18 @@ if (!currentProject) return;
 const images = currentProject.img;
 const currentFile = images[currentImgIndex];
 const isVideo = /\.(mp4|webm|mov)$/i.test(currentFile);
-const description = currentProject.description || "";
 
-// Create new media element
 let newMedia;
 
 if (isVideo) {
   newMedia = document.createElement('video');
 
-  const source = document.createElement('source');
-  source.src = currentFile;
-  source.type = 'video/mp4';
-
-  newMedia.appendChild(source);
-
+  newMedia.src = currentFile;
   newMedia.autoplay = true;
   newMedia.loop = true;
   newMedia.muted = true;
   newMedia.playsInline = true;
 
-  newMedia.load();
 } else {
   newMedia = document.createElement('img');
   newMedia.src = currentFile;
@@ -109,7 +101,6 @@ if (isVideo) {
 
 newMedia.classList.add('slide-item');
 
-console.log(currentFile, isVideo); 
 
 // Add new media to display
 imageDisplay.appendChild(newMedia);
