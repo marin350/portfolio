@@ -104,7 +104,7 @@ a{
 
 
 .image-display video {
-  max-width: 9%;
+  max-width: 90%;
   max-height: 95%;
   object-fit: contain;
 }
