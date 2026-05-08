@@ -130,7 +130,7 @@ if (!infoBar) {
   imageDisplay.appendChild(infoBar);
 }
 infoBar.innerHTML = `
-  <div class="image-description">${description}</div>
+  <div class="image-description">${currentProject.description}</div>
   <div class="image-counter">${currentImgIndex + 1} / ${images.length}</div>
 `;
 
